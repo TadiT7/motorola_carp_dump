@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<mixer>
+	<!-- These are the initial mixer settings -->
+	<!-- NOTE: For all the mixer controls added under usecases or sound devices -->
+	<!--       we should have an initial mixer setting (default value) -->
+	<ctl name="Voice Rx Device Mute" value="0" />
+	<ctl name="Voice Tx Mute" value="0" />
+	<ctl name="Voice Rx Gain" value="0" />
+	<ctl name="TTY Mode" value="Off" />
+	<ctl name="SLIMBUS_3_RX Port Mixer INTERNAL_BT_SCO_RX" value="0" />
+	<ctl name="INTERNAL_BT_SCO_RX Port Mixer SLIM_1_TX" value="0" />
+	<ctl name="SLIMBUS_1_RX Port Mixer INTERNAL_BT_SCO_TX" value="0" />
+	<ctl name="SLIMBUS_0_RX Port Mixer SLIM_0_TX" value="0" />
+	<ctl name="SLIMBUS_3_RX_Voice Mixer Voice Stub" value="0" />
+	<ctl name="SLIMBUS_1_RX Mixer Voice Stub" value="0" />
+	<ctl name="STUB_RX Mixer Voice Stub" value="0" />
+	<ctl name="Voice Stub Tx Mixer STUB_TX_HL" value="0" />
+	<ctl name="Voice Stub Tx Mixer INTERNAL_BT_SCO_TX" value="0" />
+	<ctl name="Voice Stub Tx Mixer SLIM_1_TX" value="0" />
+	<ctl name="Voice Stub Tx Mixer STUB_1_TX_HL" value="0" />
+	<ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia1" value="0" />
+	<ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia2" value="0" />
+	<ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia5" value="0" />
+	<ctl name="INTERNAL_BT_SCO_RX_Voice Mixer Voice Stub" value="0" />
+	<ctl name="MultiMedia5 Mixer SLIM_0_TX" value="0" />
+	<ctl name="MultiMedia1 Mixer SLIM_0_TX" value="0" />
+	<ctl name="HDMI Mixer MultiMedia1" value="0" />
+	<ctl name="HDMI Mixer MultiMedia2" value="0" />
+	<ctl name="HDMI Mixer MultiMedia5" value="0" />
+	<ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia1" value="0" />
+	<ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia2" value="0" />
+	<ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia5" value="0" />
+	<ctl name="SLIM_0_RX_Voice Mixer CSVoice" value="0" />
+	<ctl name="Voice_Tx Mixer SLIM_0_TX_Voice" value="0" />
+	<!-- fm -->
+	<ctl name="SLIMBUS_0_RX Port Mixer INTERNAL_FM_TX" value="0" />
+	<ctl name="SLIMBUS_DL_HL Switch" value="0" />
+	<ctl name="MultiMedia1 Mixer INTERNAL_FM_TX" value="0" />
+	<ctl name="MultiMedia2 Mixer INTERNAL_FM_TX" value="0" />
+	<ctl name="INTERNAL_FM_RX Audio Mixer MultiMedia1" value="0" />
+	<ctl name="INTERNAL_FM_RX Audio Mixer MultiMedia5" value="0" />
+	<!-- fm end -->
+
+	<!-- Voip -->
+	<ctl name="SEC_MI2S_RX_Voice Mixer Voip" value="0" />
+	<ctl name="Voip_Tx Mixer PRI_MI2S_TX_Voip" value="0" />
+	<ctl name="INTERNAL_BT_SCO_RX_Voice Mixer Voip" value="0" />
+	<ctl name="Voip_Tx Mixer INTERNAL_BT_SCO_TX_Voip" value="0" />
+	<!-- Voip end -->
+
+	<!-- Voice2 -->
+	<ctl name="SLIM_0_RX_Voice Mixer Voice2" value="0" />
+	<ctl name="Voice2_Tx Mixer SLIM_0_TX_Voice2" value="0" />
+	<ctl name="HDMI_RX_Voice Mixer Voice2" value="0" />
+	<ctl name="Voice2_Tx Mixer SLIM_0_TX_Voice2" value="0" />
+	<ctl name="INTERNAL_BT_SCO_RX_Voice Mixer Voice2" value="0" />
+	<ctl name="Voice2_Tx Mixer INTERNAL_BT_SCO_TX_Voice2" value="0" />
+	<ctl name="AFE_PCM_RX_Voice Mixer Voice2" value="0" />
+	<ctl name="Voice2_Tx Mixer AFE_PCM_TX_Voice2" value="0" />
+	<!-- Voice2 End-->
+
+	<path name="audio-record">
+		<ctl name="MultiMedia1 Mixer PRI_MI2S_TX" value="1" />
+	</path>
+
+	<path name="handset-mic">
+		<path name="audio-record" />
+	</path>
+
+	<path name="voice-rec-mic">
+		<path name="handset-mic" />
+	</path>
+
+	<path name="voice-rec-dmic-ef-fluence">
+		<path name="handset-mic" />
+	</path>
+
+</mixer>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<permissions>
+  <feature name="com.motorola.software.watch"/>
+  <feature name="com.motorola.software.device.smelt"/>
+</permissions>

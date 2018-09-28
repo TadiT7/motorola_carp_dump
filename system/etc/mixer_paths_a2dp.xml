@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<mixer>
+	<!-- These are the initial mixer settings -->
+	<!-- NOTE: For all the mixer controls added under usecases or sound devices -->
+	<!--       we should have an initial mixer setting (default value) -->
+	<ctl name="TERT_MI2S_RX Audio Mixer MultiMedia1" value="0" />
+	<ctl name="TERT_MI2S_RX Audio Mixer MultiMedia4" value="0" />
+
+	<path name="compress-offload-playback a2dp">
+		<ctl name="TERT_MI2S_RX Audio Mixer MultiMedia4" value="1" />
+	</path>
+
+	<path name="deep-buffer-playback a2dp">
+		<ctl name="TERT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+	</path>
+
+</mixer>
